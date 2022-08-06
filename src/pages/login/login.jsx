@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import  './login.less'
+import style from './style.less'
 
 export default class Login extends Component {
   render() {
