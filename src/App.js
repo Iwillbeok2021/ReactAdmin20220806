@@ -9,6 +9,7 @@ import {BrowserRouter,Route,Routes} from 'react-router-dom'
 
 import Login from "./pages/login/login";
 import Admin from "./pages/admin/admin";
+import Home from "./pages/home/home";
 
 export default class App extends Component{
 
@@ -17,6 +18,7 @@ export default class App extends Component{
     return(
       <BrowserRouter>
          <Routes>{/*只匹配一个**/}
+         <Route path="/home" element={<Home/>}> </Route>
             <Route path="/login" element={<Login/>}> </Route>
             <Route path="/" element={<Admin/>}> </Route>
          </Routes>
